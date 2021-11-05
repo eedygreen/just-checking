@@ -1,0 +1,12 @@
+{
+  "spinAppName": "default",
+  "pipelineName": "Deploy Dev default",
+  "spinPipelineTemplate": "bitso-deploy-webhook-trigger",
+  "environment": "dev",
+  "variables": {
+    "appName": "default",
+    "imageName": "default",
+    "repository": "default",
+    "helmFolderPath": "deployments/default/helm"
+  }
+}

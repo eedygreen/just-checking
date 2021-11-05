@@ -1,0 +1,5 @@
+bucket         = "terraform-store-bitso-sandbox"
+dynamodb_table = "terraform-locks-bitso-sandbox"
+profile        = "bitso-sandbox"
+region         = "us-east-2"
+role_arn       = "arn:aws:iam::877235776939:role/atlantis-apply"

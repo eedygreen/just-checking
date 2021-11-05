@@ -1,0 +1,12 @@
+{
+  "spinAppName": "default",
+  "pipelineName": "Deploy Stage default",
+  "spinPipelineTemplate": "bitso-deploy-bort-webhook-trigger",
+  "environment": "stage",
+  "variables": {
+    "appName": "default",
+    "imageName": "default",
+    "repository": "default",
+    "helmFolderPath": "deployments/default/helm"
+  }
+}
