@@ -13,8 +13,9 @@ plugins {
     // Apply the application plugin to add support for building a CLI application in Java.
     id 'application'
 
+
     id 'maven_publish'
-}
+
 
 repositories {
     // Use Maven Central for resolving dependencies.
@@ -42,8 +43,6 @@ tasks.named('test') {
     // Use JUnit Platform for unit tests.
     useJUnitPlatform()
 }
-apply plugin: 'maven-publish'
-
 //Not using `artifactId` as variable name, since Gradle will set this variable in the evaluation process.
 //using a different name to prevent lose the computed value
 publishing {
@@ -65,3 +64,4 @@ publishing {
         }
     }
 }
+
