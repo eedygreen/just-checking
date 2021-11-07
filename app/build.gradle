@@ -14,7 +14,9 @@ plugins {
     id 'application'
 
 
-    id 'maven_publish'
+    id 'maven-publish'
+}
+
 
 
 repositories {
@@ -45,23 +47,29 @@ tasks.named('test') {
 }
 //Not using `artifactId` as variable name, since Gradle will set this variable in the evaluation process.
 //using a different name to prevent lose the computed value
+
 publishing {
-    repositories {
-        maven {
-            name = "GitHubPackages"
-            url = uri('https://maven.pkg.github.com/eedygreen/just-checking')
-            credentials {
-                username = System.getenv('GITHUB_ACTOR') ?: '' // blank value just to prevent errors
-                password = System.getenv('GITHUB_TOKEN') ?: '' // blank value just to prevent errors
+        repositories {
+            maven {
+                name = "eedyGitHubPackages"
+                url = uri('https://maven.pkg.github.com/eedygreen/just-checking')
+                credentials {
+                    username = System.getenv('GITHUB_ACTOR') ?: '' // blank value just to prevent errors
+                    password = System.getenv('GITHUB_TOKEN') ?: '' // blank value just to prevent errors
+                }
             }
         }
-    }
-    publications {
-        bitso(MavenPublication) {
-            groupId = 'com.eedygreen'
-            artifactId = project.ext.properties.get('publishedArtifactId')
-            from(components.java)
+
+        publications {
+            eedygreen(MavenPublication) {
+                groupId = 'com.company.project'
+                artifactId = 'library-name'
+                version = '0.1.0'
+                // artifactId = project.ext.properties.get('publishedArtifactId')
+                from(components.java)
+            }
+    
         }
-    }
 }
+
 
