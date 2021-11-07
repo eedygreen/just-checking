@@ -14,12 +14,10 @@ plugins {
     id 'application'
 
 
-    id 'maven_publish'
+    id 'maven-publish'
 }
 
-group 'com.company.project'
-archivesBaseName = 'library-name'
-version '0.1.0'
+
 
 repositories {
     // Use Maven Central for resolving dependencies.
@@ -64,6 +62,9 @@ publishing {
 
         publications {
             eedygreen(MavenPublication) {
+                groupId = 'com.company.project'
+                archivesId = 'library-name'
+                version = '0.1.0'
                 // artifactId = project.ext.properties.get('publishedArtifactId')
                 from(components.java)
             }
