@@ -1,5 +1,0 @@
-bucket         = "terraform-store-bitso-prod-us-east-2"
-dynamodb_table = "terraform-locks-bitso"
-profile        = "bitso-prod"
-region         = "us-east-2"
-role_arn       = "arn:aws:iam::672388688877:role/atlantis-apply"
