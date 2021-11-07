@@ -62,8 +62,8 @@ publishing {
 
         publications {
             eedygreen(MavenPublication) {
-                groupId = 'com.company.project'
-                artifactId = 'library-name'
+                groupId = 'com.company.justchecking'
+                artifactId = 'just-checking'
                 version = '0.1.0'
                 // artifactId = project.ext.properties.get('publishedArtifactId')
                 from(components.java)
