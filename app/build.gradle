@@ -61,7 +61,7 @@ publishing {
         }
 
         publications {
-            eedygreen(MavenPublication) {
+            maven(MavenPublication) {
                 groupId = 'com.eedygreen.eedyg-just-checking'
                 artifactId = 'eedyg-just-checking'
                 version = '0.1.0'
