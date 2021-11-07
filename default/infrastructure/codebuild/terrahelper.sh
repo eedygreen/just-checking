@@ -1,1 +1,0 @@
-../terrahelper.sh
