@@ -52,7 +52,7 @@ publishing {
         repositories {
             maven {
                 name = "eedyGitHubPackages"
-                url = uri('https://maven.pkg.github.com/eedygreen/eedyg-just-checking')
+                url = uri('https://maven.pkg.github.com/eedygreen/eedyg-checking')
                 credentials {
                     username = System.getenv('GITHUB_ACTOR') ?: '' // blank value just to prevent errors
                     password = System.getenv('GITHUB_TOKEN') ?: '' // blank value just to prevent errors
@@ -62,8 +62,8 @@ publishing {
 
         publications {
             maven(MavenPublication) {
-                groupId = 'com.eedygreen.eedyg-just-checking'
-                artifactId = 'eedyg-just-checking'
+                groupId = 'com.eedygreen.eedyg-checking'
+                artifactId = 'eedyg-checking'
                 version = '0.1.1'
                 // artifactId = project.ext.properties.get('publishedArtifactId')
                 from(components.java)
