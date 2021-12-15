@@ -51,8 +51,8 @@ tasks.named('test') {
 publishing {
         repositories {
             maven {
-                name = "eedyGitHubPackages"
-                url = uri('https://maven.pkg.github.com/eedygreen/eedyg-just-checking')
+                name = "GitHubPackages"
+                url = uri('https://maven.pkg.github.com/eedygreen/just-checking')
                 credentials {
                     username = System.getenv('GITHUB_ACTOR') ?: '' // blank value just to prevent errors
                     password = System.getenv('GITHUB_TOKEN') ?: '' // blank value just to prevent errors
@@ -62,9 +62,9 @@ publishing {
 
         publications {
             maven(MavenPublication) {
-                groupId = 'com.eedygreen.eedyg-just-checking'
-                artifactId = 'eedyg-just-checking'
-                version = '0.1.0'
+                groupId = 'com.eedygreen'
+                artifactId = 'just-checking'
+                version = '0.1.2'
                 // artifactId = project.ext.properties.get('publishedArtifactId')
                 from(components.java)
             }
