@@ -1,0 +1,7 @@
+ <body>
+        <menu ref="reports" />
+        <menu>
+            <item name="README" href="README.html" />
+            <item name="library HOWTO" href="library.html" />
+        </menu>
+    </body>
