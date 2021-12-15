@@ -51,7 +51,7 @@ tasks.named('test') {
 publishing {
         repositories {
             maven {
-                name = "eedyGitHubPackages"
+                name = "GitHubPackages"
                 url = uri('https://maven.pkg.github.com/eedygreen/eedyg-just-checking')
                 credentials {
                     username = System.getenv('GITHUB_ACTOR') ?: '' // blank value just to prevent errors
