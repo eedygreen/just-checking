@@ -68,39 +68,37 @@ publishing {
                 description = 'github.com/eedygreen/just-checking'
                 
                 pom {
-                name = "My Testing"
-                description = "A description of what my library does."
-                inceptionYear = "2020"
-                url = "https://github.com/eedygreen/just-checking"
-                licenses {
-                    license {
-                        name = "The Apache License, Version 2.0"
-                        url = "https://github.com/eedygreen"
-                        distribution = "http://www.apache.org/licenses/LICENSE-2.0.txt"
+                    name = "My Testing"
+                    description = "A description of what my library does."
+                    inceptionYear = "2020"
+                    url = "https://github.com/eedygreen/just-checking"
+                    licenses {
+                        license {
+                            name = "The Apache License, Version 2.0"
+                            url = "https://github.com/eedygreen"
+                            distribution = "http://www.apache.org/licenses/LICENSE-2.0.txt"
+                        }
                     }
-                }
-                developers {
-                    developer {
-                        id = "username"
-                        name = "User Name"
-                        url = "https://github.com/username/"
+                    developers {
+                        developer {
+                            id = "username"
+                            name = "User Name"
+                            url = "https://github.com/username/"
+                        }
                     }
-                }
-                // scm {
-                //     url = "https://github.com/username/mylibrary/"
-                //     connection = "scm:git:git://github.com/username/mylibrary.git"
-                //     developerConnection = "scm:git:ssh://git@github.com/username/mylibrary.git"
-                // }
-            }
-
-            // Alternatively to the DSL based POM configuration above you can define them
-            // in Gradle properties
-            // pomFromGradleProperties()
-        }
+                    scm {
+                        url = "https://github.com/username/mylibrary/"
+                        connection = "scm:git:git://github.com/username/mylibrary.git"
+                        developerConnection = "scm:git:ssh://git@github.com/username/mylibrary.git"
+                    }
+                    
+                    }
+}           
 
                 // artifactId = project.ext.properties.get('publishedArtifactId')
                 from(components.java)
- }
+ 
+        }
 }
 
 
