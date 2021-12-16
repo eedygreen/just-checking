@@ -64,7 +64,7 @@ publishing {
             maven(MavenPublication) {
                 groupId = 'com.eedygreen'
                 artifactId = 'just-checking'
-                version = '0.1.6'
+                version = '0.1.7'
                 description = 'github.com/eedygreen/just-checking'
 
                 // artifactId = project.ext.properties.get('publishedArtifactId')
