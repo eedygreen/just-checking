@@ -9,3 +9,4 @@
 
 rootProject.name = 'just-checking'
 include('app')
+include('README.md')
