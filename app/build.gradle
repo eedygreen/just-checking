@@ -101,7 +101,7 @@ publishing {
                 // artifactId = project.ext.properties.get('publishedArtifactId')
                 from(components.java)
  }
-    
+}
 
 
 
