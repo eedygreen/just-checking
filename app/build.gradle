@@ -65,6 +65,7 @@ publishing {
                 groupId = 'com.eedygreen'
                 artifactId = 'just-checking'
                 version = '0.1.6'
+                description = 'github.com/eedygreen/just-checking'
 
                 // artifactId = project.ext.properties.get('publishedArtifactId')
                 from(components.java)
