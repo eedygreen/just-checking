@@ -9,4 +9,4 @@ runs:
         fields: repo,message,commit,author,action,job,eventName,ref,workflow # selectable (default: repo,message)
       env:
         SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }} # required
-        if: always()
+      if: always()
